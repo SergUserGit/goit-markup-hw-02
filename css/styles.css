@@ -11,6 +11,10 @@
   --foter-color: rgba(255, 255, 255, 0.6);
   --font-roboto: 'Roboto', sans-serif;
   --font-raleway: 'Raleway', sans-serif;
+  --box-shadow-one: rgba(0, 0, 0, 0.12);
+  --box-shadow-two: rgba(0, 0, 0, 0.14);
+  --box-shadow-three: rgba(0, 0, 0, 0.2);
+  --item-portfolio-color: #EEEEEE;
 }
 
 body {
@@ -29,15 +33,10 @@ body {
 
 .paragraph {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.7143;
   letter-spacing: 0.03em;
   color: var(--text-head-color);
-}
-
-.image-style {
-  background-color: var(--background-white-color);
 }
 
 /*section header*/
@@ -115,7 +114,7 @@ body {
 
 /*section advantages*/
 .advantages {
-  background-color: var(--background-advantages);
+  background-color: var(--background-white-color);
 }
 
 .advantages-title {
@@ -128,7 +127,7 @@ body {
 
 /*section activity*/
 .activity {
-  background-color: var(--background-advantages);
+  background-color: var(--background-white-color);
 }
 
 .activity-title {
@@ -142,6 +141,12 @@ body {
 /*section our team*/
 .ourteam {
   background-color: var(--background-our-team);
+}
+
+.list-ourteam {
+  background: var(--background-white-color);
+  box-shadow: 0px 1px 3px var(--box-shadow-one), 0px 1px 1px var(--box-shadow-two), 0px 2px 1px var(--box-shadow-three);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-member {
@@ -184,7 +189,7 @@ body {
 
 /*section hero-portfolio*/
 .hero-portfolio {
-  background-color: var(--background-advantages);
+  background-color: var(--background-white-color);
 }
 
 .button-portfolio {
@@ -195,6 +200,7 @@ body {
   line-height: 1.625;
   text-align: center;
   letter-spacing: 0.03em;
+  border-radius: 4px;
   background-color: var(--background-our-team);
 }
 
@@ -206,7 +212,12 @@ body {
 
 /*section category-elements*/
 .category-elements {
-  background-color: var(--background-advantages);
+  background-color: var(--background-white-color);
+}
+
+.list-portfolio {
+  background: var(--background-white-color);
+  border: 1px solid var(--item-portfolio-color);
 }
 
 .element {
